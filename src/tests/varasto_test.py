@@ -43,7 +43,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_liian_suuri_alkusaldo(self):
         v = Varasto(10, 15)
-        self.assertAlmostEqual(v.saldo, 10)
+        self.assertAlmostEqual(v.saldo, 9) # Tahallinen virhe 10 vaihdettu 9
 
     def test_negatiivinen_lisays_ei_tee_mitaan(self):
         self.varasto.lisaa_varastoon(-5)
