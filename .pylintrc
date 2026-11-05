@@ -1,0 +1,14 @@
+[FORMAT]
+# Rivin maksimipituus
+max-line-length=80
+
+[REFACTORING]
+# Enintään kaksi sisäkkäistä lohkoa funktion tai metodin sisällä
+max-nested-blocks=2
+
+[DESIGN]
+# Funktiossa tai metodissa saa olla enintään 15 lausetta (statements)
+max-statements=15
+
+# [LISÄSÄÄNTÖ] Enintään 5 parametria/argumenttia funktiolle tai metodille
+max-args=5
