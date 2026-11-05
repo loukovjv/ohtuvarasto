@@ -31,28 +31,33 @@ def main():
     huono = Varasto(100.0, -50.7)
     print(huono)
 
-    print("Varasto(100.0, 150.0):") # alku_saldo > tilavuus
+    # alku_saldo > tilavuus
+    print("Varasto(100.0, 150.0):")
     ylivuoto = Varasto(100.0, 150.0)
     print(ylivuoto)
 
     print(f"Olutvarasto: {olutta}")
-    print("olutta.lisaa_varastoon(1000.0):") # laitetaan liikaa tavaraa
+    # laitetaan liikaa tavaraa
+    print("olutta.lisaa_varastoon(1000.0):")
     olutta.lisaa_varastoon(1000.0)
     print(f"Olutvarasto: {olutta}")
 
     print(f"Mehuvarasto: {mehua}")
-    print("mehua.lisaa_varastoon(-666.0):") # negatiivinen lisäys
+    # negatiivinen lisäys
+    print("mehua.lisaa_varastoon(-666.0):")
     mehua.lisaa_varastoon(-666.0)
     print(f"Mehuvarasto: {mehua}")
 
     print(f"Olutvarasto: {olutta}")
-    print("olutta.ota_varastosta(1000.0):") # otetaan enemmän kuin varastossa on
+    # otetaan enemmän kuin varastossa on
+    print("olutta.ota_varastosta(1000.0):")
     saatiin = olutta.ota_varastosta(1000.0)
     print(f"saatiin {saatiin}")
     print(f"Olutvarasto: {olutta}")
 
     print(f"Mehuvarasto: {mehua}")
-    print("mehua.ota_varastosta(-32.9):") # negatiivinen otto
+    # negatiivinen otto
+    print("mehua.ota_varastosta(-32.9):")
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")

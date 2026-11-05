@@ -7,6 +7,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto = Varasto(10)
 
     def test_konstruktori_luo_tyhjan_varaston(self):
+        # Dokumentaatio:
         # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertAlmostEqual
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
@@ -43,7 +44,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_liian_suuri_alkusaldo(self):
         v = Varasto(10, 15)
-        self.assertAlmostEqual(v.saldo, 10) 
+        self.assertAlmostEqual(v.saldo, 10)
 
     def test_negatiivinen_lisays_ei_tee_mitaan(self):
         self.varasto.lisaa_varastoon(-5)
